@@ -1,0 +1,274 @@
+@font-face {
+    font-family: Product Regular;
+    src: url(../fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Product Bold;
+    src: url(../fonts/Product\ Sans\ Bold.ttf);
+}
+
+*{
+    font-family: Product Bold;
+}
+
+html,body{
+    height: 100%;
+}
+
+.row-fluid{
+    margin: 0!important;
+    height: 100%;
+    width: 100%;
+}
+
+.back-link{
+    position: absolute;
+    float: left;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.back-img{
+    max-width: 50px;    
+}
+
+.back-img:hover{
+    -webkit-animation: swing 1s;
+    animation: swing 1s;
+}
+
+.lcc-container{
+    background-color: #feaea7;
+}
+
+.hack-container{
+    background-color: #3f7fc1;
+}
+
+.lcc-container:hover .button-lcc{
+    opacity: 1;
+    text-decoration: none;
+    animation-name: slideInUp;
+    -webkit-transition: all 1s ease;
+    transition: all 0.5s ease;
+}
+
+.lcc-container:hover .anim-left{
+    opacity: 1;
+    text-decoration: none;
+    animation-name: slideInLeft;
+    -webkit-transition: all 1s ease;
+    transition: all 0.5s ease;
+}
+
+.lcc-container:hover .anim-right{
+    opacity: 1;
+    text-decoration: none;
+    animation-name: slideInRight;
+    -webkit-transition: all 1s ease;
+    transition: all 0.5s ease;
+}
+
+.hack-container:hover .button-hack{
+    opacity: 1;
+    text-decoration: none;
+    animation-name: slideInUp;
+    -webkit-transition: all 1s ease;
+    transition: all 0.5s ease;
+}
+
+.hack-container:hover .anim-left{
+    opacity: 1;
+    text-decoration: none;
+    animation-name: slideInLeft;
+    -webkit-transition: all 1s ease;
+    transition: all 2s ease;
+}
+
+.hack-container:hover .anim-right{
+    opacity: 1;
+    text-decoration: none;
+    animation-name: slideInRight;
+    -webkit-transition: all 1s ease;
+    transition: all 2s ease;
+}
+
+.center-box{
+    margin: 95px;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    animation: bounceInDown 2s ease-in;
+}
+
+.event-name{
+    color: whitesmoke;
+    font-size: 36px;
+}
+
+.event-image:hover{
+    -webkit-animation: swing 1s;
+    animation: pulse 1s;
+}
+
+.event-image{
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 40%;
+}
+
+table{
+    position: relative;
+}
+
+.comment{
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.comment-left{
+    position: relative;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    animation-name: slideOutDown;
+}
+
+.comment-right{
+    position: relative;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    animation-name: slideOutDown;
+}
+
+.comment-left-text{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 40%;
+}
+
+.comment-right-text{
+    transform: rotate(90deg);
+    position: absolute;
+    right: 40%;
+    -webkit-transition: all 1s ease;
+    transition: all 2s ease;
+    animation-name: slideOutDown;
+}
+
+.event-date{
+    font-family: Product Regular;
+    margin-top: 12px;
+    color: whitesmoke;
+    font-size: 24px;
+    line-height: 0.5;
+}
+
+.event-year{
+    color: whitesmoke;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.btn-custom{
+    display: block;
+    opacity: 80%;
+    max-width: 250px;
+    font-size: large;
+    align-items: center;
+    border-radius: 150px;
+    padding: 10px;
+    background-color: #ffe83e;
+    color: #4d4d4d;
+    margin-top: 20px;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 0.5s ease;
+    animation-name: slideOutDown;
+}
+
+.more-img{
+    max-width: 10%;
+    margin-left: 10px;
+}
+
+.btn-custom:hover{
+    color: #4d4d4d;
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 800px) {
+    .row-fluid{
+        overflow: auto;
+        margin: 0!important;
+        width: 100%;
+    }
+
+    .center-box {
+        /* display: block; */
+        /* height: 100%; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:  40px;
+        margin-top: 80px;
+        animation: fadeIn 2s ease;
+    }
+
+    .lcc-container:hover .button-lcc{
+        animation: none;
+    }
+
+    .hack-container:hover .button-hack{
+        animation: none;
+    }
+
+    .btn-custom{
+        display: block;
+        opacity: 0.8;
+        animation: none;
+    }
+
+    .back-link{
+        position: absolute;
+        float: left;
+        margin-top: 30px;
+        margin-left: 35px;
+    }
+
+    .comment{
+        font-weight: 200;
+        font-size: 24px;
+    }
+
+    .comment-left{
+        opacity: 1;
+    }
+
+    .comment-right{
+        opacity: 1;
+    }
+
+    .comment-left-text{
+        left: 25%;
+    }
+    
+    .comment-right-text{
+        right: 25%;
+    }
+
+    /* .no-hover{
+        pointer-events: none;
+    } */
+
+}
