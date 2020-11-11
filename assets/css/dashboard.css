@@ -101,3 +101,13 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
+
+.highlight {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #b3b3b3;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  font-weight: 400;
+  font-size: 15px;
+}

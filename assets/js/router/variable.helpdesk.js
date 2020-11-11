@@ -4,6 +4,29 @@ export default {
     		<h1 class="h2">Helpdesk</h1>
   		</div>
 
-  		Content
+		  <!-- detail section -->
+		  <div class="info">
+			  <div>
+				  <h4>
+					  Helpdesk ID
+				  </h4>
+				  <h5>
+					  Helpdesk support ticket number for this user. If empty, user does not have any support ticket or npt connected to any human operator.
+				  </h5>
+				  <figure class="highlight">
+					  1384204
+				  </figure>
+				  <h4>
+					  Helpdesk Queue
+				  </h4>
+				  <h5>
+					  Helpdesk queue number before handled by humand operator.
+				  </h5>
+				  <figure class="highlight">
+					  3
+				  </figure>
+			  </div>
+		  </div>
+		  <!-- end detail section -->
 	</div>`
 }
