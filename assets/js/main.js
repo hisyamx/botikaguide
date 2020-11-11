@@ -1,13 +1,15 @@
 const router = new VueRouter({
 	mode: 'history',
 	base: baseurl.replace(window.location.origin, ''),
-	routes: [{
+	routes: [
+		{
 			path: '/variable',
 			name: 'Variable',
 			component: function () {
 				return import(`./router/variable.js?v=${ version }`);
 			},
-			children: [{
+			children: [
+				{
 					path: 'user',
 					name: 'Variable User',
 					component: function () {
@@ -35,107 +37,108 @@ const router = new VueRouter({
 			]
 		},
 		{
-			path: '/codefunction',
-			name: 'Code',
+			path: '/function',
+			name: 'Function',
 			component: function () {
-				return import(`./router/code.js?v=${ version }`);
+				return import(`./router/function.js?v=${ version }`);
 			},
-			children: [{
-				path: 'respond',
-				name: 'Code Respond',
-				component: function () {
-					return import(`./router/code.respond.js?v=${ version }`);
+			children: [
+				{
+					path: 'respond',
+					name: 'Function Respond',
+					component: function () {
+						return import(`./router/function.respond.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'variable',
+					name: 'Function Variable',
+					component: function () {
+						return import(`./router/function.variable.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'profile',
+					name: 'Function Profile',
+					component: function () {
+						return import(`./router/function.profile.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'nps',
+					name: 'Function NPS',
+					component: function () {
+						return import(`./router/function.nps.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'report',
+					name: 'Function Report',
+					component: function () {
+						return import(`./router/function.report.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'analytic',
+					name: 'Function Analytic',
+					component: function () {
+						return import(`./router/function.analytic.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'api',
+					name: 'Function API',
+					component: function () {
+						return import(`./router/function.api.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'email',
+					name: 'Function Email',
+					component: function () {
+						return import(`./router/function.email.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'transcript',
+					name: 'Function Transcript',
+					component: function () {
+						return import(`./router/function.transcript.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'log',
+					name: 'Function Log',
+					component: function () {
+						return import(`./router/function.log.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'then',
+					name: 'Function Then',
+					component: function () {
+						return import(`./router/function.then.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'variable',
+					name: 'Function Variable',
+					component: function () {
+						return import(`./router/function.variable.js?v=${ version }`);
+					}
+				},
+				{
+					path: 'profile',
+					name: 'Function Profile',
+					component: function () {
+						return import(`./router/function.profile.js?v=${ version }`);
+					}
+				},
+				{
+					path: '*',
+					redirect: 'respond'
 				}
-			},
-			{
-				path: 'variable',
-				name: 'Code Variable',
-				component: function () {
-					return import(`./router/code.variable.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'profile',
-				name: 'Code Profile',
-				component: function () {
-					return import(`./router/code.profile.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'nps',
-				name: 'Code NPS',
-				component: function () {
-					return import(`./router/code.nps.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'report',
-				name: 'Code Report',
-				component: function () {
-					return import(`./router/code.report.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'analytic',
-				name: 'Code Analytic',
-				component: function () {
-					return import(`./router/code.analytic.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'api',
-				name: 'Code API',
-				component: function () {
-					return import(`./router/code.api.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'email',
-				name: 'Code Email',
-				component: function () {
-					return import(`./router/code.email.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'transcript',
-				name: 'Code Transcript',
-				component: function () {
-					return import(`./router/code.transcript.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'log',
-				name: 'Code Log',
-				component: function () {
-					return import(`./router/code.log.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'then',
-				name: 'Code Then',
-				component: function () {
-					return import(`./router/code.then.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'variable',
-				name: 'Code Variable',
-				component: function () {
-					return import(`./router/code.variable.js?v=${ version }`);
-				}
-			},
-			{
-				path: 'profile',
-				name: 'Code Profile',
-				component: function () {
-					return import(`./router/code.profile.js?v=${ version }`);
-				}
-			},
-			{
-				path: '*',
-				redirect: 'user'
-			}
-		]
+			]
 		},
 		{
 			path: '/',
@@ -151,12 +154,23 @@ const router = new VueRouter({
 	]
 })
 
+Vue.component('PrismComponent', PrismComponent);
+
 new Vue({
 	el: '#app',
 	data() {
-		return {}
+		return {
+			// data: json
+			data: null
+		}
 	},
 	router,
+	mounted: function() {
+		var vuethis = this;
+		$.getJSON(baseurl+'assets/json/data.json', function(json) {
+			vuethis.data = json;
+		});
+	},
 	template: `<div>
 		<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
 		  	<a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Docs</a>
@@ -193,62 +207,62 @@ new Vue({
 						  </h6>
 						  <ul class="nav flex-column mb-2">
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/respond" v-bind:class="($root.$route.name == 'Code Respond' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/respond" v-bind:class="($root.$route.name == 'Function Respond' ? 'active' : '')">
 		              				Respond
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/variable" v-bind:class="($root.$route.name == 'Code Variable' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/variable" v-bind:class="($root.$route.name == 'Function Variable' ? 'active' : '')">
 		              				Variable
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/profile" v-bind:class="($root.$route.name == 'Code Profile' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/profile" v-bind:class="($root.$route.name == 'Function Profile' ? 'active' : '')">
 		              				Profile
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/nps" v-bind:class="($root.$route.name == 'Code NPS' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/nps" v-bind:class="($root.$route.name == 'Function NPS' ? 'active' : '')">
 		              				NPS
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/report" v-bind:class="($root.$route.name == 'Code Report' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/report" v-bind:class="($root.$route.name == 'Function Report' ? 'active' : '')">
 		              				Report
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/analytic" v-bind:class="($root.$route.name == 'Code Analytic' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/analytic" v-bind:class="($root.$route.name == 'Function Analytic' ? 'active' : '')">
 		              				Analytic
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/api" v-bind:class="($root.$route.name == 'Code API' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/api" v-bind:class="($root.$route.name == 'Function API' ? 'active' : '')">
 		              				API
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/email" v-bind:class="($root.$route.name == 'Code Email' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/email" v-bind:class="($root.$route.name == 'Function Email' ? 'active' : '')">
 		              				Email
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/helpdesk" v-bind:class="($root.$route.name == 'Code Helpdesk' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/helpdesk" v-bind:class="($root.$route.name == 'Function Helpdesk' ? 'active' : '')">
 		              				Helpdesk
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/transcript" v-bind:class="($root.$route.name == 'Code Transcript' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/transcript" v-bind:class="($root.$route.name == 'Function Transcript' ? 'active' : '')">
 		              				Transcript
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/log" v-bind:class="($root.$route.name == 'Code Log' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/log" v-bind:class="($root.$route.name == 'Function Log' ? 'active' : '')">
 		              				Log
 		            			</router-link>
 		          			</li>
 		          			<li class="nav-item">
-		            			<router-link class="nav-link" to="/codefunction/then" v-bind:class="($root.$route.name == 'Code Then' ? 'active' : '')">
+		            			<router-link class="nav-link" to="/function/then" v-bind:class="($root.$route.name == 'Function Then' ? 'active' : '')">
 		              				Then
 		            			</router-link>
 							  </li>
@@ -256,7 +270,7 @@ new Vue({
 		      		</div>
 		    	</nav>
 
-		    	<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+		    	<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4" v-if="data">
 		    		<router-view></router-view>
 		    	</main>
 		  	</div>

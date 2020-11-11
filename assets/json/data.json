@@ -1,0 +1,48 @@
+{
+	"variable": {
+		"user": [
+			{ 
+				"name": "Message",
+				"variable": "{{user.message}}",
+				"description": "Last message sent by user",
+				"example": {
+					"request": "<?php\r\n$message = \"{{user.message}}\";",
+					"response": "Halo, saya mau tanya sesuatu"
+				}
+			},
+			{
+				"name": "User Id",
+				"variable": "{{user.id}}",
+				"description": "User's id",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{user.id}}\";",
+					"response": "Ucafe7b68410fd46ef054a31aa068f738_1653771880"
+				}
+			}
+		]
+	},
+	"function": {
+		"respond": [
+			{
+				"name": "Respond Text",
+				"function": "respondText(string $text)",
+				"description": "Send text to user",
+				"example": {
+					"request": "<?php\r\nrespondText(\"Hai, apa kabar hari ini?\");",
+					"response": "Hai, apa kabar hari ini?"
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Text to Speech",
+				"function": "respondTextToSpeech(string $text [, string $voiceCharacter, string $isoLanguageCode])",
+				"description": "Send text-to-speech audio to user",
+				"example": {
+					"request": "<?php\r\nrespondTextToSpeech(\"Halo, apa yang bisa saya bantu?\");",
+					"response": "audio files with \"Halo, apa yang bisa saya bantu?\" content"
+				},
+				"visible": true
+			}
+		]
+	}
+}
