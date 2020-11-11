@@ -1,6 +1,6 @@
 <?php
     # lokasi file
-    $baseurl = 'http://localhost/Botika/botikaguide/';
+    $baseurl = 'http://localhost/botikaguidern/';
     # untuk mengupdate cache browser
     $version = '9';
 ?>
