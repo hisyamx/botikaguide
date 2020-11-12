@@ -121,17 +121,10 @@ const router = new VueRouter({
 					}
 				},
 				{
-					path: 'variable',
-					name: 'Function Variable',
+					path: 'helpdesk',
+					name: 'Function Helpdesk',
 					component: function () {
-						return import(`./router/function.variable.js?v=${ version }`);
-					}
-				},
-				{
-					path: 'profile',
-					name: 'Function Profile',
-					component: function () {
-						return import(`./router/function.profile.js?v=${ version }`);
+						return import(`./router/function.helpdesk.js?v=${ version }`);
 					}
 				},
 				{
