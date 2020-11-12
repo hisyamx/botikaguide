@@ -18,6 +18,298 @@
 					"request": "<?php\r\n$userid = \"{{user.id}}\";",
 					"response": "Ucafe7b68410fd46ef054a31aa068f738_1653771880"
 				}
+			},
+			{ 
+				"name": "User First Name",
+				"variable": "{{user.firstName}}",
+				"description": "User's first name",
+				"example": {
+					"request": "<?php\r\n$message = \"{{user.firstName}}\";",
+					"response": "John"
+				}
+			},
+			{
+				"name": "User Last Name",
+				"variable": "{{user.lastName}}",
+				"description": "User's last name",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{user.lastName}}\";",
+					"response": "Doe"
+				}
+			},
+			{ 
+				"name": "User Nick Name",
+				"variable": "{{user.nickName}}",
+				"description": "User's nick name",
+				"example": {
+					"request": "<?php\r\n$message = \"{{user.nickName}}\";",
+					"response": "John"
+				}
+			},
+			{
+				"name": "User Address",
+				"variable": "{{user.address}}",
+				"description": "User's address",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{user.address}}\";",
+					"response": "Jl Perumnas Blok E III No 50 Seturan"
+				}
+			},
+			{ 
+				"name": "User Phone Number",
+				"variable": "{{user.phone1}}",
+				"description": "User's phone number",
+				"example": {
+					"request": "<?php\r\n$message = \"{{user.phone1}}\";",
+					"response": "81802207000"
+				}
+			},
+			{
+				"name": "User Phone Number (Additional)",
+				"variable": "{{user.phone2}}",
+				"description": "User's phone number (additional)",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{user.phone2}}\";",
+					"response": "895601216900"
+				}
+			},
+			{ 
+				"name": "User Phone Number (Additional)",
+				"variable": "{{user.phone3}}",
+				"description": "User's phone number (additional)",
+				"example": {
+					"request": "<?php\r\n$message = \"{{user.phone3}}\";",
+					"response": "895364636451"
+				}
+			},
+			{
+				"name": "User Email",
+				"variable": "{{user.email1}}",
+				"description": "User's email",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{user.email1}}\";",
+					"response": "admin@botika.online"
+				}
+			},
+			{ 
+				"name": "User Email (Additional)",
+				"variable": "{{user.email2}}",
+				"description": "User's email (additional)",
+				"example": {
+					"request": "<?php\r\n$message = \"{{user.email2}}\";",
+					"response": "support@botika.online"
+				}
+			},
+			{
+				"name": "User Gender",
+				"variable": "{{user.gender}}",
+				"description": "User's gender",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{user.gender}}\";",
+					"response": "Male"
+				}
+			},
+			{ 
+				"name": "Message",
+				"variable": "{{user.message}}",
+				"description": "Last message sent by user",
+				"example": {
+					"request": "<?php\r\n$message = \"{{user.message}}\";",
+					"response": "Halo, saya mau tanya sesuatu"
+				}
+			},
+			{
+				"name": "User Id",
+				"variable": "{{user.id}}",
+				"description": "User's id",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{user.id}}\";",
+					"response": "Ucafe7b68410fd46ef054a31aa068f738_1653771880"
+				}
+			},
+			{ 
+				"name": "User Profil Picture",
+				"variable": "{{user.profilePic}}",
+				"description": "User's profile piture url",
+				"example": {
+					"request": "<?php\r\n$message = \"{{user.profilePic}}\";",
+					"response": "https://pps.whatsapp.net/v/t61.24694-24/101977775_151989196435260_7212905946550104675_n.jpg?oh=2ba12b7d25d2ae777ef2ff78146bc465&oe=5F67E92F"
+				}
+			},
+			{
+				"name": "User Date of Birth",
+				"variable": "{{user.dateOfBirth}}",
+				"description": "User's date of birth",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{user.dateOfBirth}}\";",
+					"response": "1984-01-01"
+				}
+			},
+			{ 
+				"name": "User Latitude",
+				"variable": "{{user.latitude}}",
+				"description": "User's location lattitude. Available after user shares location",
+				"example": {
+					"request": "<?php\r\n$message = \"{{user.latitude}}\";",
+					"response": "-77.656.936"
+				}
+			},
+			{
+				"name": "User Longitude",
+				"variable": "{{user.longitude}}",
+				"description": "User's location longitude. Available after user shares location",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{user.longitude}}\";",
+					"response": "1.104.061.027"
+				}
+			},
+			{ 
+				"name": "Date",
+				"variable": "{{date}}",
+				"description": "Current date in the format Y-n-j",
+				"example": {
+					"request": "<?php\r\n$message = \"{{date}}\";",
+					"response": "2020-10-28"
+				}
+			},
+			{
+				"name": "User Date Time",
+				"variable": "{{dateTime}}",
+				"description": "Current date and time in the format Y-n-j H:i:s",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{dateTime}}\";",
+					"response": "2020-10-28 18.30.01"
+				}
+			},
+			{ 
+				"name": "Time",
+				"variable": "{{time}}",
+				"description": "Current time in the format H:i:s",
+				"example": {
+					"request": "<?php\r\n$message = \"{{time}}\";",
+					"response": "18.30.00"
+				}
+			},
+			{
+				"name": "Hour",
+				"variable": "{{hour}}",
+				"description": "Current hour in the 24 format",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{hour}}\";",
+					"response": "18"
+				}
+			},
+			{ 
+				"name": "Minute",
+				"variable": "{{minute}}",
+				"description": "Current minute",
+				"example": {
+					"request": "<?php\r\n$message = \"{{minute}}\";",
+					"response": "30"
+				}
+			},
+			{
+				"name": "Second",
+				"variable": "{{second}}",
+				"description": "Current Second",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{second}}\";",
+					"response": "1"
+				}
+			},
+			{ 
+				"name": "Time of The Day",
+				"variable": "{{tod}}",
+				"description": "Time of the day. e.g. pagi, siang, sore, malam",
+				"example": {
+					"request": "<?php\r\n$message = \"{{tod}}\";",
+					"response": "siang"
+				}
+			},
+			{
+				"name": "Year",
+				"variable": "{{year}}",
+				"description": "Current year",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{year}}\";",
+					"response": "2020"
+				}
+			},
+			{ 
+				"name": "Month",
+				"variable": "{{month}}",
+				"description": "Current month",
+				"example": {
+					"request": "<?php\r\n$message = \"{{month}}\";",
+					"response": "10"
+				}
+			},
+			{
+				"name": "Month Name",
+				"variable": "{{monthName}}",
+				"description": "Current month's name",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{monthName}}\";",
+					"response": "Oktober"
+				}
+			},
+			{ 
+				"name": "Day of Month",
+				"variable": "{{dayOfMonth}}",
+				"description": "Current day of this month",
+				"example": {
+					"request": "<?php\r\n$message = \"{{dayOfMonth}}\";",
+					"response": "28"
+				}
+			},
+			{
+				"name": "Day Name",
+				"variable": "{{dayName}}",
+				"description": "Current day's name",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{dayName}}\";",
+					"response": "Selasa"
+				}
+			}
+		],
+		"usernps": [
+			{ 
+				"name": "User NPS Score",
+				"variable": "{{user.nps.score}}",
+				"description": "NPS score given by the user in this conversation session",
+				"example": {
+					"request": "<?php\r\n$message = \"{{user.nps.score}}\";",
+					"response": "9"
+				}
+			},
+			{
+				"name": "User NPS Feedback",
+				"variable": "{{user.nps.feedback}}",
+				"description": "Feedback given by user related to the NPS Score",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{user.nps.feedback}}\";",
+					"response": "Sudah bagus, tetap ditingkatkanl lagi ya"
+				}
+			}
+		],
+		"helpdesk": [
+			{ 
+				"name": "Helpdesk Id",
+				"variable": "{{helpdesk.id}}",
+				"description": "Helpdesk support ticket number for this user. If empty, user does not have any support ticket or npt connected to any human operator",
+				"example": {
+					"request": "<?php\r\n$message = \"{{helpdesk.id}}\";",
+					"response": "1384204"
+				}
+			},
+			{
+				"name": "Helpdesk Queue",
+				"variable": "{{helpdesk.queue}}",
+				"description": "Helpdesk queue number before handled by humand operator",
+				"example": {
+					"request": "<?php\r\n$userid = \"{{helpdesk.queue}}\";",
+					"response": "3"
+				}
 			}
 		]
 	},
@@ -31,7 +323,7 @@
 					"request": "<?php\r\nrespondText(\"Hai, apa kabar hari ini?\");",
 					"response": "Hai, apa kabar hari ini?"
 				},
-				"visible": true
+				"visible": false
 			},
 			{
 				"name": "Respond Text to Speech",
@@ -40,6 +332,280 @@
 				"example": {
 					"request": "<?php\r\nrespondTextToSpeech(\"Halo, apa yang bisa saya bantu?\");",
 					"response": "audio files with \"Halo, apa yang bisa saya bantu?\" content"
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Button",
+				"function": "respondButton(array $button)",
+				"description": "Send text to user",
+				"example": {
+					"request": "<?php\r\nrespondButton(\narray(\"type\"=>\"text\",\n\"text\"=>\"Tekan Ini\",\n\"payload\"=>\"dataku\")\narray(\"type\"=>\"url\",\n\"text\"=>\"Buka Website\",\n\"payload\"=>\"http://botika.online/\")));",
+					"response": "Hai, apa kabar hari ini?"
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Text to Button",
+				"function": "respondTextButton(string $text, array $button)",
+				"description": "Send text and button to user.",
+				"example": {
+					"request": "<?php\r\nrespondButton(\narray(\"type\"=>\"text\",\n\"text\"=>\"Tekan Ini\",\n\"payload\"=>\"dataku\")\narray(\"type\"=>\"url\",\n\"text\"=>\"Buka Website\",\n\"payload\"=>\"http://botika.online/\")));",
+					"response": "audio files with \"Halo, apa yang bisa saya bantu?\" content"
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Image",
+				"function": "respondImage(string $url)",
+				"description": "Send image to user",
+				"example": {
+					"request": "<?php\r\nrespondImage(\"https://blog.botika.online/wp-content/uploads/2019/04/55957878_2588079721208266_8916285117227909291_n.jpg\");",
+					"response": "https://blog.botika.online/wp-content/uploads/2019/04/55957878_2588079721208266_8916285117227909291_n.jpg content" 
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Carousel",
+				"function": "respondCarousel(array $carousel)",
+				"description": "Send carousel to user",
+				"example": {
+					"request": "<?php\r\nrespondTextToSpeech(\"Halo, apa yang bisa saya bantu?\");",
+					"response": "audio files with \"Halo, apa yang bisa saya bantu?\" content"
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Carousel Button",
+				"function": "respondCarouselButton(array $carousel, array $button)",
+				"description": "Send carousel with additional button below it",
+				"example": {
+					"request": "<?php\r\nrespondText(\"Hai, apa kabar hari ini?\");",
+					"response": "Hai, apa kabar hari ini?"
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Audio",
+				"function": "respondAudio(string $url)",
+				"description": "Send audio to user",
+				"example": {
+					"request": "<?php\r\nrespondAudio(\"https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3\");",
+					"response": "audio files with https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Video",
+				"function": "respondVideo(string $url)",
+				"description": "Send video to user",
+				"example": {
+					"request": "<?php\r\nrespondVideo(\"https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4\");",
+					"response": "video files like https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4"
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Document",
+				"function": "respondDocument(string $url)",
+				"description": "Send document to user",
+				"example": {
+					"request": "<?php\r\nrespondDocument(\"https://file-examples-com.github.io/uploads/2017/02/file-sample_100kB.doc\");",
+					"response": "documenet files like https://file-examples-com.github.io/uploads/2017/02/file-sample_100kB.doc"
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Random Text",
+				"function": "respondRandomText(array $textArray)",
+				"description": "Send random text taken from array to user",
+				"example": {
+					"request": "<?php\r\nrespondRandomText(\"Selamat datang\",\"Senang bertemu anda\",\"Apa kabarnya?\");",
+					"response": "Selamat datang?"
+				},
+				"visible": true
+			},
+			{
+				"name": "Respond Random Text to Speech",
+				"function": "respondRandomTextToSpeech(array $textArray)",
+				"description": "Send random text to Speech taken from array to user",
+				"example": {
+					"request": "<?php\r\nrespondTextToSpeech(\"Halo, apa yang bisa saya bantu?\");",
+					"response": "audio files with \"Halo, apa yang bisa saya bantu?\" content"
+				},
+				"visible": true
+			}
+		],
+		"variable": [
+			{
+				"name": "Variable Set",
+				"function": "userVariableSet(string $varKey, mixed $varValue, string $varType = \"string\", boolean $varPermanent = false)",
+				"description": "Set variable related to this user",
+				"example": {
+					"request": "<?php\r\nuserVariableSet(\"customVar\", \"Lorem Ipsum\");\nrespondText(\"Variable customVar anda adalah: {{user.customVar}}\");",
+					"response": "Hai, apa kabar hari ini?"
+				},
+				"visible": true
+			},
+			{
+				"name": "variable Get",
+				"function": "userVariableGet(string $varKey)",
+				"description": "Get variable related to this user.",
+				"example": {
+					"request": "<?php\r\n$myVar = userVariableGet(\"customVar\";\nrespondText(\"Variable customVar anda adalah: \".$myVar);",
+					"response": "audio files with \"Halo, apa yang bisa saya bantu?\" content"
+				},
+				"visible": true
+			}
+		],
+		"profile": [
+			{
+				"name": "User Profile Set",
+				"function": "userProfileSet(string $varKey, string $varValue)",
+				"description": "Send text this user profil",
+				"example": {
+					"request": "<?php\r\nuserProfileSet(\"Nickname\",\"John\")\nrespondText(\"Namamu sekarang adalah:\"{{user.nickName}});",
+					"response": "Hai, apa kabar hari ini?"
+				},
+				"visible": true
+			}
+		],
+		"nps": [
+			{
+				"name": "User NPS Set",
+				"function": "userNpsSet(mixed $score, string $feedback)",
+				"description": "Store NPS and feedback data given by this user. The collected NPS can be found at Botmaster.",
+				"example": {
+					"request": "<?php\r\nuserNpsSet(\"9\", \"Ok bagus\");",
+					"response": "Hai, apa kabar hari ini?"
+				},
+				"visible": true
+			}
+		],
+		"report": [
+			{
+				"name": "Report Write",
+				"function": "reportWrite(string $reportGroup, string $reportTitle, array $keyValuePair)",
+				"description": "Write report data. The report can be viewed at Botmaster",
+				"example": {
+					"request": "<?php\r\nreportWrite(\"Report Group\", \"Judul Report\",\nArray(\"tanggal\" => date(\"Y-n-j\"),\"produk\" => \"{{user.cartItem}}\",\"jumlah\" => \"{{user.cartQty}}\",\"total\" => \"{{user.cartSubtotal}}\"));",
+					"response": "Hai, apa kabar hari ini?"
+				},
+				"visible": true
+			}
+		],
+		"analytic": [
+			{
+				"name": "Analytic Track",
+				"function": "analyticTrack(string $analyticGroup, string $analyticKey)",
+				"description": "Track and save data to analytic. The analytic can be viewed at Botmaster",
+				"example": {
+					"request": "<?php\r\nanalyticTrack(\"menu\", \"product\");",
+					"response": "menu, product, etc"
+				},
+				"visible": true
+			}
+		],
+		"api": [
+			{
+				"name": "JSON API",
+				"function": "jsonApi(string $method, string $url [, array $headers, string $body) : string",
+				"description": "Access 3rd party REST API.\nmethod variable can be:GET or POSTheader default: []\nmaximum result allowed returned by the API is 1 MB",
+				"example": {
+					"request": "<?php\r\n$result = jsonApi(\"GET\", \"http://newsapi.org/v2/top-headlines?country=id&apiKey=335d66fe32874246a453c747f19b86ab\");",
+					"response": "$result = jsonApi(\"GET\", \"http://newsapi.org/v2/top-headlines?country=id&apiKey=335d66fe32874246a453c747f19b86ab\")"
+				},
+				"visible": true
+			}
+		],
+		"email": [
+			{
+				"name": "Email Send",
+				"function": "emailSend(array $to, array $cc, array $bcc, string $subject, string $body)",
+				"description": "Send automated email. Sender address is always \"noreply@botika.online\"",
+				"example": {
+					"request": "<?php\r\nemailSend(Array(\"john@gmail.com\",\"jane@gmail.com\"), Array(), Array(), \"Email otomatis dari chatbot\", \"Halo :)<br><br>Ini adalah email otomatis dari chatbot<br><br>Terima kasih\");",
+					"response": "send email to \"john@gmail.com\" "
+				},
+				"visible": true
+			}
+		],
+		"helpdesk": [
+			{
+				"name": "Conversation Helpdesk",
+				"function": "conversationHelpdesk(boolean $queueIfBusy) : array",
+				"description": "Transfer current conversation to human operator and create helpdesk support ticket. Human operator can view, reply and manage support ticket by using Omnibotika. If queueIfBusy variable is true, then user will be put in waiting queue when human operator is busy",
+				"example": {
+					"request": "<?php\r\nrespondText(\"Anda akan terhubung dengan customer service kami\");\n$helpdesk = conversationHelpdesk(true);\n$helpdesk = json_decode($helpdesk, true);\nif($helpdesk[\"result\"]==\"success\"){\nif($helpdesk[\"wait\"]==0){respondText(\"Nomor ticket anda adalah: \".$helpdesk[\"ticketId\"]);}\nelse{respondText(\"Mohon menunggu, customer service kami akan segera melayani anda. Antrian anda adalah nomor: \".$helpdesk[\"wait\"]);}}\nelse {respondText(\"Mohon maaf, customer service kami sedang tidak tersedia\");"
+				},
+				"visible": true
+			}
+		],
+		"transcript": [
+			{
+				"name": "Transcript",
+				"function": "transcriptSend(array $to, string $subject)",
+				"description": "Send this user conversation transcript to your email",
+				"example": {
+					"request": "<?php\r\ntranscriptSend(Array(\"john@gmail.com\"), \"Conversation Transcript\".date(\"Y-n-j H:i:s\"));"
+				},
+				"visible": true
+			}
+		],
+		"log": [
+			{
+				"name": "Log",
+				"function": "log(string $logTitle, string $logInfo)",
+				"description": "Write log information to track or debug your program. The log can be viewed at Botmaster",
+				"example": {
+					"request": "<?php\r\nlog(\"Debug Log\", \"Debug info\");"
+				},
+				"visible": true
+			}
+		],
+		"then": [
+			{
+				"name": "Then Stop",
+				"function": "thenStop()",
+				"description": "After the code is executed, stop and wait for the nex user message",
+				"example": {
+					"request": "<?php\r\nthenStop();"
+				},
+				"visible":false
+			},
+			{
+				"name": "Then Continue",
+				"function": "thenContinue()",
+				"description": "Default. After the code is executed, continue run the next action.",
+				"example": {
+					"request": "<?php\r\nthenContinue();"
+				},
+				"visible":false
+			},
+			{
+				"name": "Then Jump To",
+				"function": "thenJumpTo(string $stateName)",
+				"description": "After the code is executed, jump to the state, stop and wait for next user message",
+				"example": {
+					"request": "<?php\r\nrespondText(\"Hai, apa kabar hari ini?\");"
+				},
+				"visible":false
+			},
+			{
+				"name": "Then Jump and Run",
+				"function": "thenJumpAndRun(string $stateName)",
+				"description": "After the code is executed, jump to the state and run the actions",
+				"example": {
+					"request": "<?php\r\nthenJumpAndRun(string $stateName);"
+				},
+				"visible":false
+			},
+			{
+				"name": "Then End Chat",
+				"function": "thenEndChat()",
+				"description": "After the code is executed, end the conversation and restart from the beginning",
+				"example": {
+					"request": "<?php\r\nthenEndChat();"
 				},
 				"visible": true
 			}

@@ -1,32 +1,30 @@
 export default {
-	template: `<div>
-		<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    		<h1 class="h2">Helpdesk</h1>
-  		</div>
+    data: function() {
+        return {
+            data: this.$root.data.function.variable
+        }
+    },
+    template: `<div>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Variable</h1>
+        </div>
 
-		  <!-- detail section -->
-		  <div class="info">
-			  <div>
-				  <h4>
-					  Variable
-				  </h4>
-				  <h5>
-					  "Set variable related to this user. Variable can be used in chatbot respond by using this format: {{variableName}} or {{jsonVariableName.objectName}} or {{myJsonArray.0.title}} varType variable can be: string (default), integer, float, boolean, json Non
-					  permanent variable will only be stored while the conversation is active. If user is idle for more than 30 minutes, the conversation will be marked as timeout and the variable will be erased. Permanent variable is stored forever."
-					  <br> Visible to User: No.
-				  </h5>
-				  <figure class="highlight">
-					  userVariableSet(string $varKey, mixed $varValue, string $varType = "string", boolean $varPermanent = false) <br>"userVariableSet(""customVar"", ""Lorem Ipsum""); respondText(""Variable customVar anda adalah: {{user.customVar}}"");"
-				  </figure>
-				  <h5>
-					  Get variable related to this user.
-					  <br> Visible to User: No.
-				  </h5>
-				  <figure class="highlight">
-					  userVariableGet(string $varKey) <br>"$myVar = userVariableGet(""customVar""; respondText(""Variable customVar anda adalah: "".$myVar);"
-				  </figure>
-			  </div>
-		  </div>
-		  <!-- end detail section -->
-	</div>`
+        <!-- detail section -->
+        <div class="info">
+            <div v-for="(list, i) in data"> 
+                <h6 class="pb-2 mb-0">{{ list.name }}</h6>
+                <p class="mb-1"><b>{{ list.function }}</b></p>
+                <p class="mb-1">This variable serves to {{ list.description }}. Example:</p>
+                <PrismComponent class="m-0" language="php">{{ list.example.request }}</PrismComponent>
+                <p class="mb-0" v-if="list.example.response">The example above will send a message to the user: <i>{{ list.example.response }}</i></p>
+                <div class="alert alert-info mt-2" role="alert">
+                    <p class="mb-0" v-if="list.example.visible">This returns will be visible to the user</p>
+                    <p class="mb-0" v-if="!list.example.visible">This returns will not be visible to the user</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!-- end detail section -->
+
+    </div>`
 }

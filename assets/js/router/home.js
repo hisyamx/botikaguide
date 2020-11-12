@@ -4,6 +4,6 @@ export default {
     		<h1 class="h2">Home</h1>
   		</div>
 
-  		Content
+  		Botika Documentation
 	</div>`
 }

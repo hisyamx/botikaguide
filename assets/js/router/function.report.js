@@ -1,23 +1,30 @@
 export default {
-	template: `<div>
-		<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    		<h1 class="h2">Helpdesk</h1>
-  		</div>
+    data: function() {
+        return {
+            data: this.$root.data.function.report
+        }
+    },
+    template: `<div>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Report</h1>
+        </div>
 
-		  <div class="info">
-		  <div>
-			  <h4>
-				  Report
-			  </h4>
-			  <h5>
-				  "Write report data. The report can be viewed at Botmaster keyValuePair is array with free key name and value Arry( ""customKey"" => ""customValue"", ""additionalKey"" => ""additionalValue"" )" <br>Visible to User: No.
-			  </h5>
-			  <figure class="highlight">
-				  reportWrite(string $reportGroup, string $reportTitle, array $keyValuePair) <br>"reportWrite(""Report Group"", ""Judul Report"", Array( ""tanggal"" => date(""Y-n-j""), ""produk"" => ""{{user.cartItem}}"", ""jumlah"" => ""{{user.cartQty}}"",
-				  ""total"" => ""{{user.cartSubtotal}}"" ) );"
-			  </figure>
-		  </div>
-	  </div>
-	  <!-- end detail section -->
-	</div>`
+        <!-- detail section -->
+        <div class="info">
+            <div v-for="(list, i) in data"> 
+                <h6 class="pb-2 mb-0">{{ list.name }}</h6>
+                <p class="mb-1"><b>{{ list.function }}</b></p>
+                <p class="mb-1">This variable serves to {{ list.description }}. Example:</p>
+                <PrismComponent class="m-0" language="php">{{ list.example.request }}</PrismComponent>
+                <p class="mb-0" v-if="list.example.response">The example above will send a message to the user: <i>{{ list.example.response }}</i></p>
+                <div class="alert alert-info mt-2" role="alert">
+                    <p class="mb-0" v-if="list.example.visible">This returns will be visible to the user</p>
+                    <p class="mb-0" v-if="!list.example.visible">This returns will not be visible to the user</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!-- end detail section -->
+
+    </div>`
 }
