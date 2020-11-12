@@ -24,7 +24,7 @@
 				"variable": "{{user.firstName}}",
 				"description": "User's first name",
 				"example": {
-					"request": "<?php\r\n$message = \"{{user.firstName}}\";",
+					"request": "<?php\r\n$firstname = \"{{user.firstName}}\";",
 					"response": "John"
 				}
 			},
@@ -33,7 +33,7 @@
 				"variable": "{{user.lastName}}",
 				"description": "User's last name",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{user.lastName}}\";",
+					"request": "<?php\r\n$lastname = \"{{user.lastName}}\";",
 					"response": "Doe"
 				}
 			},
@@ -42,7 +42,7 @@
 				"variable": "{{user.nickName}}",
 				"description": "User's nick name",
 				"example": {
-					"request": "<?php\r\n$message = \"{{user.nickName}}\";",
+					"request": "<?php\r\n$nickname = \"{{user.nickName}}\";",
 					"response": "John"
 				}
 			},
@@ -51,7 +51,7 @@
 				"variable": "{{user.address}}",
 				"description": "User's address",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{user.address}}\";",
+					"request": "<?php\r\n$address = \"{{user.address}}\";",
 					"response": "Jl Perumnas Blok E III No 50 Seturan"
 				}
 			},
@@ -60,7 +60,7 @@
 				"variable": "{{user.phone1}}",
 				"description": "User's phone number",
 				"example": {
-					"request": "<?php\r\n$message = \"{{user.phone1}}\";",
+					"request": "<?php\r\n$userphone1 = \"{{user.phone1}}\";",
 					"response": "81802207000"
 				}
 			},
@@ -69,7 +69,7 @@
 				"variable": "{{user.phone2}}",
 				"description": "User's phone number (additional)",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{user.phone2}}\";",
+					"request": "<?php\r\n$userphone2 = \"{{user.phone2}}\";",
 					"response": "895601216900"
 				}
 			},
@@ -78,7 +78,7 @@
 				"variable": "{{user.phone3}}",
 				"description": "User's phone number (additional)",
 				"example": {
-					"request": "<?php\r\n$message = \"{{user.phone3}}\";",
+					"request": "<?php\r\n$userphone3 = \"{{user.phone3}}\";",
 					"response": "895364636451"
 				}
 			},
@@ -87,7 +87,7 @@
 				"variable": "{{user.email1}}",
 				"description": "User's email",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{user.email1}}\";",
+					"request": "<?php\r\n$useremail1 = \"{{user.email1}}\";",
 					"response": "admin@botika.online"
 				}
 			},
@@ -96,7 +96,7 @@
 				"variable": "{{user.email2}}",
 				"description": "User's email (additional)",
 				"example": {
-					"request": "<?php\r\n$message = \"{{user.email2}}\";",
+					"request": "<?php\r\n$useremail2 = \"{{user.email2}}\";",
 					"response": "support@botika.online"
 				}
 			},
@@ -105,34 +105,16 @@
 				"variable": "{{user.gender}}",
 				"description": "User's gender",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{user.gender}}\";",
+					"request": "<?php\r\n$gender = \"{{user.gender}}\";",
 					"response": "Male"
-				}
-			},
-			{
-				"name": "Message",
-				"variable": "{{user.message}}",
-				"description": "Last message sent by user",
-				"example": {
-					"request": "<?php\r\n$message = \"{{user.message}}\";",
-					"response": "Halo, saya mau tanya sesuatu"
-				}
-			},
-			{
-				"name": "User Id",
-				"variable": "{{user.id}}",
-				"description": "User's id",
-				"example": {
-					"request": "<?php\r\n$userid = \"{{user.id}}\";",
-					"response": "Ucafe7b68410fd46ef054a31aa068f738_1653771880"
 				}
 			},
 			{
 				"name": "User Profil Picture",
 				"variable": "{{user.profilePic}}",
-				"description": "User's profile piture url",
+				"description": "User's profile picture url",
 				"example": {
-					"request": "<?php\r\n$message = \"{{user.profilePic}}\";",
+					"request": "<?php\r\n$profilepicture = \"{{user.profilePic}}\";",
 					"response": "https://pps.whatsapp.net/v/t61.24694-24/101977775_151989196435260_7212905946550104675_n.jpg?oh=2ba12b7d25d2ae777ef2ff78146bc465&oe=5F67E92F"
 				}
 			},
@@ -141,7 +123,7 @@
 				"variable": "{{user.dateOfBirth}}",
 				"description": "User's date of birth",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{user.dateOfBirth}}\";",
+					"request": "<?php\r\n$dateofbirth = \"{{user.dateOfBirth}}\";",
 					"response": "1984-01-01"
 				}
 			},
@@ -150,7 +132,7 @@
 				"variable": "{{user.latitude}}",
 				"description": "User's location lattitude. Available after user shares location",
 				"example": {
-					"request": "<?php\r\n$message = \"{{user.latitude}}\";",
+					"request": "<?php\r\n$userlatitude = \"{{user.latitude}}\";",
 					"response": "-77.656.936"
 				}
 			},
@@ -159,7 +141,7 @@
 				"variable": "{{user.longitude}}",
 				"description": "User's location longitude. Available after user shares location",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{user.longitude}}\";",
+					"request": "<?php\r\n$userlongitude = \"{{user.longitude}}\";",
 					"response": "1.104.061.027"
 				}
 			},
@@ -168,7 +150,7 @@
 				"variable": "{{date}}",
 				"description": "Current date in the format Y-n-j",
 				"example": {
-					"request": "<?php\r\n$message = \"{{date}}\";",
+					"request": "<?php\r\n$date = \"{{date}}\";",
 					"response": "2020-10-28"
 				}
 			},
@@ -177,7 +159,7 @@
 				"variable": "{{dateTime}}",
 				"description": "Current date and time in the format Y-n-j H:i:s",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{dateTime}}\";",
+					"request": "<?php\r\n$datetime = \"{{dateTime}}\";",
 					"response": "2020-10-28 18.30.01"
 				}
 			},
@@ -186,7 +168,7 @@
 				"variable": "{{time}}",
 				"description": "Current time in the format H:i:s",
 				"example": {
-					"request": "<?php\r\n$message = \"{{time}}\";",
+					"request": "<?php\r\n$time = \"{{time}}\";",
 					"response": "18.30.00"
 				}
 			},
@@ -195,7 +177,7 @@
 				"variable": "{{hour}}",
 				"description": "Current hour in the 24 format",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{hour}}\";",
+					"request": "<?php\r\n$hour = \"{{hour}}\";",
 					"response": "18"
 				}
 			},
@@ -204,7 +186,7 @@
 				"variable": "{{minute}}",
 				"description": "Current minute",
 				"example": {
-					"request": "<?php\r\n$message = \"{{minute}}\";",
+					"request": "<?php\r\n$minute = \"{{minute}}\";",
 					"response": "30"
 				}
 			},
@@ -213,7 +195,7 @@
 				"variable": "{{second}}",
 				"description": "Current Second",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{second}}\";",
+					"request": "<?php\r\n$second = \"{{second}}\";",
 					"response": "1"
 				}
 			},
@@ -222,7 +204,7 @@
 				"variable": "{{tod}}",
 				"description": "Time of the day. e.g. pagi, siang, sore, malam",
 				"example": {
-					"request": "<?php\r\n$message = \"{{tod}}\";",
+					"request": "<?php\r\n$tod = \"{{tod}}\";",
 					"response": "siang"
 				}
 			},
@@ -231,7 +213,7 @@
 				"variable": "{{year}}",
 				"description": "Current year",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{year}}\";",
+					"request": "<?php\r\n$year = \"{{year}}\";",
 					"response": "2020"
 				}
 			},
@@ -240,7 +222,7 @@
 				"variable": "{{month}}",
 				"description": "Current month",
 				"example": {
-					"request": "<?php\r\n$message = \"{{month}}\";",
+					"request": "<?php\r\n$month = \"{{month}}\";",
 					"response": "10"
 				}
 			},
@@ -249,7 +231,7 @@
 				"variable": "{{monthName}}",
 				"description": "Current month's name",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{monthName}}\";",
+					"request": "<?php\r\n$monthname = \"{{monthName}}\";",
 					"response": "Oktober"
 				}
 			},
@@ -258,7 +240,7 @@
 				"variable": "{{dayOfMonth}}",
 				"description": "Current day of this month",
 				"example": {
-					"request": "<?php\r\n$message = \"{{dayOfMonth}}\";",
+					"request": "<?php\r\n$dayofmonth = \"{{dayOfMonth}}\";",
 					"response": "28"
 				}
 			},
@@ -267,7 +249,7 @@
 				"variable": "{{dayName}}",
 				"description": "Current day's name",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{dayName}}\";",
+					"request": "<?php\r\n$dayname = \"{{dayName}}\";",
 					"response": "Selasa"
 				}
 			}
@@ -278,7 +260,7 @@
 				"variable": "{{user.nps.score}}",
 				"description": "NPS score given by the user in this conversation session",
 				"example": {
-					"request": "<?php\r\n$message = \"{{user.nps.score}}\";",
+					"request": "<?php\r\n$npsscore = \"{{user.nps.score}}\";",
 					"response": "9"
 				}
 			},
@@ -287,7 +269,7 @@
 				"variable": "{{user.nps.feedback}}",
 				"description": "Feedback given by user related to the NPS Score",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{user.nps.feedback}}\";",
+					"request": "<?php\r\n$npsfeedback = \"{{user.nps.feedback}}\";",
 					"response": "Sudah bagus, tetap ditingkatkanl lagi ya"
 				}
 			}
@@ -298,7 +280,7 @@
 				"variable": "{{helpdesk.id}}",
 				"description": "Helpdesk support ticket number for this user. If empty, user does not have any support ticket or npt connected to any human operator",
 				"example": {
-					"request": "<?php\r\n$message = \"{{helpdesk.id}}\";",
+					"request": "<?php\r\n$helpdeskid = \"{{helpdesk.id}}\";",
 					"response": "1384204"
 				}
 			},
@@ -307,7 +289,7 @@
 				"variable": "{{helpdesk.queue}}",
 				"description": "Helpdesk queue number before handled by humand operator",
 				"example": {
-					"request": "<?php\r\n$userid = \"{{helpdesk.queue}}\";",
+					"request": "<?php\r\n$helpdeskqueue = \"{{helpdesk.queue}}\";",
 					"response": "3"
 				}
 			}
@@ -323,7 +305,7 @@
 					"request": "<?php\r\nrespondText(\"Hai, apa kabar hari ini?\");",
 					"response": "Hai, apa kabar hari ini?"
 				},
-				"visible": false
+				"visible": true
 			},
 			{
 				"name": "Respond Text to Speech",
@@ -340,7 +322,7 @@
 				"function": "respondButton(array $button)",
 				"description": "Send text to user",
 				"example": {
-					"request": "<?php\r\nrespondButton(array(\n\"type\"=>\"text\",\n\"text\"=>\"Tekan Ini\",\n\"payload\"=>\"dataku\")\narray(\n\"type\"=>\"url\",\n\"text\"=>\"Buka Website\",\n\"payload\"=>\"http://botika.online/\")));",
+					"request": "<?php\r\nrespondButton(\n\tarray(\n\t\t\"type\"=>\"text\",\n\t\t\"text\"=>\"Tekan Ini\",\n\t\t\"payload\"=>\"dataku\"\n\t),\n\tarray(\n\t\t\"type\"=>\"url\",\n\t\t\"text\"=>\"Buka Website\",\n\t\t\"payload\"=>\"http://botika.online/\"\n\t)\n);",
 					"response": "Hai, apa kabar hari ini?"
 				},
 				"visible": true
@@ -350,7 +332,7 @@
 				"function": "respondTextButton(string $text, array $button)",
 				"description": "Send text and button to user.",
 				"example": {
-					"request": "<?php\r\nrespondTextButton(\"Tekan tombol berikut:\", Array(Array(\"type\" => \"text\",\"text\" => \"Tekan Ini\",\"payload\" => \"tombol 1 ditekan\",),));"
+					"request": "<?php\r\nrespondTextButton(\n\t\"Tekan tombol berikut:\",\n\tarray(\n\t\tarray(\n\t\t\t\"type\" => \"text\",\n\t\t\t\"text\" => \"Tekan Ini\",\n\t\t\t\"payload\" => \"tombol 1 ditekan\"\n\t\t),\n\t)\n);"
 				},
 				"visible": true
 			},
@@ -369,8 +351,7 @@
 				"function": "respondCarousel(array $carousel)",
 				"description": "Send carousel to user",
 				"example": {
-					"request": "<?php\r\nrespondCarousel(Array(Array(\n\"title\" => \"Judul Card #1\",\n\"subtitle\" => \n\"Subtitle #1\",\n\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1kzolhrd4614.jpg\", \n\"button\" => Array(Array(\n\"type\" => \"text\",\n\"text\" => \"Klik Ini\",\n\"payload\" => \"Data payload\",))),\nArray(\n\"title\" => \"Judul Card #2\",\n\"subtitle\" => \"Subtitle #2\",\n\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1k0eqdowfkav.jpg\", \n\"button\" => Array(Array(\n\"type\" => \"phone\",\n\"text\" => \"Telephone\",\n\"payload\" => \"081802207000\",)))));",
-					"response": "audio files with \"Halo, apa yang bisa saya bantu?\" content"
+					"request": "<?php\r\nrespondCarousel(\n\tarray(\n\t\tarray(\n\t\t\t\"title\" => \"Judul Card #1\",\n\t\t\t\"subtitle\" => \"Subtitle #1\",\n\t\t\t\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1kzolhrd4614.jpg\", \n\t\t\t\"button\" => \n\t\t\tarray(\n\t\t\t\tarray(\n\t\t\t\t\t\"type\" => \"text\",\n\t\t\t\t\t\"text\" => \"Klik Ini\",\n\t\t\t\t\t\"payload\" => \"Data payload\"\n\t\t\t\t)\n\t\t\t)\n\t\t),\n\t\tarray(\n\t\t\t\"title\" => \"Judul Card #2\",\n\t\t\t\"subtitle\" => \"Subtitle #2\",\n\t\t\t\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1k0eqdowfkav.jpg\", \n\t\t\t\"button\" => \n\t\t\tarray(\n\t\t\t\tarray(\n\t\t\t\t\"type\" => \"phone\",\n\t\t\t\t\"text\" => \"Telephone\",\n\t\t\t\t\"payload\" => \"081802207000\"\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t)\n);"
 				},
 				"visible": true
 			},
@@ -379,8 +360,7 @@
 				"function": "respondCarouselButton(array $carousel, array $button)",
 				"description": "Send carousel with additional button below it",
 				"example": {
-					"request": "<?php\r\nrespondText(\"Hai, apa kabar hari ini?\");",
-					"response": "Hai, apa kabar hari ini?"
+					"request": "<?php\r\nrespondCarouselButton(\n\tarray(\n\t\tarray(\n\t\t\t\"title\" => \"Judul Card Button #1\",\n\t\t\t\"subtitle\" => \"Subtitle #1\",\n\t\t\t\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1kzolhrd4614.jpg\", \n\t\t\t\"button\" => \n\t\t\tarray(\n\t\t\t\tarray(\n\t\t\t\t\t\"type\" => \"text\",\n\t\t\t\t\t\"text\" => \"Klik Ini\",\n\t\t\t\t\t\"payload\" => \"Data yang dikirim balik\"\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t),\n\tarray(\n\t\tarray(\n\t\t\"type\" => \"phone\",\n\t\t\"text\" => \"Telephone\",\n\t\t\"payload\" => \"081802207000\"\n\t\t)\n\t)\n);"
 				},
 				"visible": true
 			},
@@ -420,7 +400,7 @@
 				"description": "Send random text taken from array to user",
 				"example": {
 					"request": "<?php\r\nrespondRandomText(\"Selamat datang\",\"Senang bertemu anda\",\"Apa kabarnya?\");",
-					"response": "Selamat datang?"
+					"response": "Selamat datang"
 				},
 				"visible": true
 			},
@@ -443,16 +423,16 @@
 				"example": {
 					"request": "<?php\r\nuserVariableSet(\"customVar\", \"Lorem Ipsum\");\nrespondText(\"Variable customVar anda adalah: {{user.customVar}}\");"
 				},
-				"visible": true
+				"visible": false
 			},
 			{
 				"name": "variable Get",
 				"function": "userVariableGet(string $varKey)",
 				"description": "Get variable related to this user.",
 				"example": {
-					"request": "<?php\r\n$myVar = userVariableGet(\"customVar\";\nrespondText(\"Variable customVar anda adalah: \".$myVar);"
+					"request": "<?php\r\n$myVar = userVariableGet(\"customVar\");\nrespondText(\"Variable customVar anda adalah: \".$myVar);"
 				},
-				"visible": true
+				"visible": false
 			}
 		],
 		"profile": [
@@ -461,10 +441,10 @@
 				"function": "userProfileSet(string $varKey, string $varValue)",
 				"description": "Send text this user profil",
 				"example": {
-					"request": "<?php\r\nuserProfileSet(\"Nickname\",\"John\")\nrespondText(\"Namamu sekarang adalah:\"{{user.nickName}});",
+					"request": "<?php\r\nuserProfileSet(\"Nickname\",\"John\")\nrespondText(\"Namamu sekarang adalah: {{user.nickName}}\");",
 					"response": "varKey variable can be: firstName User's first name, lastName User's last name, etc"
 				},
-				"visible": true
+				"visible": false
 			}
 		],
 		"nps": [
@@ -484,10 +464,10 @@
 				"function": "reportWrite(string $reportGroup, string $reportTitle, array $keyValuePair)",
 				"description": "Write report data. The report can be viewed at Botmaster",
 				"example": {
-					"request": "<?php\r\nreportWrite(\"Report Group\", \"Judul Report\",\nArray(\"tanggal\" => date(\"Y-n-j\"),\"produk\" => \"{{user.cartItem}}\",\"jumlah\" => \"{{user.cartQty}}\",\"total\" => \"{{user.cartSubtotal}}\"));",
+					"request": "<?php\r\nreportWrite(\"Report Group\", \"Judul Report\",\n\tarray(\n\t\t\"tanggal\" => date(\"Y-n-j\"),\n\t\t\"produk\" => \"{{user.cartItem}}\",\n\t\t\"jumlah\" => \"{{user.cartQty}}\",\n\t\t\"total\" => \"{{user.cartSubtotal}}\"\n\t)\n);",
 					"response": "keyValuePair is array with free key name and value"
 				},
-				"visible": true
+				"visible": false
 			}
 		],
 		"analytic": [
@@ -499,7 +479,7 @@
 					"request": "<?php\r\nanalyticTrack(\"menu\", \"product\");",
 					"response": "menu, product, etc"
 				},
-				"visible": true
+				"visible": false
 			}
 		],
 		"api": [
@@ -511,7 +491,7 @@
 					"request": "<?php\r\n$result = jsonApi(\"GET\", \"http://newsapi.org/v2/top-headlines?country=id&apiKey=335d66fe32874246a453c747f19b86ab\");",
 					"response": "$result = jsonApi(\"GET\", \"http://newsapi.org/v2/top-headlines?country=id&apiKey=335d66fe32874246a453c747f19b86ab\")"
 				},
-				"visible": true
+				"visible": false
 			}
 		],
 		"email": [
@@ -520,10 +500,10 @@
 				"function": "emailSend(array $to, array $cc, array $bcc, string $subject, string $body)",
 				"description": "Send automated email. Sender address is always \"noreply@botika.online\"",
 				"example": {
-					"request": "<?php\r\nemailSend(Array(\"john@gmail.com\",\"jane@gmail.com\"), Array(), Array(), \"Email otomatis dari chatbot\", \"Halo :)<br><br>Ini adalah email otomatis dari chatbot<br><br>Terima kasih\");",
+					"request": "<?php\r\nemailSend(\n\tarray(\"john@gmail.com\",\"jane@gmail.com\"), \n\tarray(), \n\tarray(), \n\t\"Email otomatis dari chatbot\", \n\t\"Halo :)<br><br>Ini adalah email otomatis dari chatbot<br><br>Terima kasih\"\n);",
 					"response": "send email to \"john@gmail.com\" "
 				},
-				"visible": true
+				"visible": false
 			}
 		],
 		"helpdesk": [
@@ -532,9 +512,9 @@
 				"function": "conversationHelpdesk(boolean $queueIfBusy):array",
 				"description": "Transfer current conversation to human operator and create helpdesk support ticket. Human operator can view, reply and manage support ticket by using Omnibotika. If queueIfBusy variable is true, then user will be put in waiting queue when human operator is busy",
 				"example": {
-					"request": "<?php\r\nrespondText(\"Anda akan terhubung dengan customer service kami\");\n$helpdesk = conversationHelpdesk(true);\n$helpdesk = json_decode($helpdesk, true);\nif($helpdesk[\"result\"]==\"success\"){\nif($helpdesk[\"wait\"]==0){respondText(\"Nomor ticket anda adalah: \".$helpdesk[\"ticketId\"]);}\nelse{respondText(\"Mohon menunggu, customer service kami akan segera melayani anda. Antrian anda adalah nomor: \".$helpdesk[\"wait\"]);}}\nelse {respondText(\"Mohon maaf, customer service kami sedang tidak tersedia\");"
+					"request": "<?php\r\nrespondText(\"Anda akan terhubung dengan customer service kami\");\n$helpdesk = conversationHelpdesk(true);\n$helpdesk = json_decode($helpdesk, true);\nif($helpdesk[\"result\"]==\"success\")\n{\n\tif($helpdesk[\"wait\"]==0)\n\t{\n\t\trespondText(\"Nomor ticket anda adalah: \".$helpdesk[\"ticketId\"]);\n\t}\n\telse\n\t{\n\t\trespondText(\"Mohon menunggu, customer service kami akan segera melayani anda. Antrian anda adalah nomor: \".$helpdesk[\"wait\"]);\n\t}\n}\nelse\n{\n\trespondText(\"Mohon maaf, customer service kami sedang tidak tersedia\"\n);"
 				},
-				"visible": true
+				"visible": false
 			}
 		],
 		"transcript": [
@@ -543,9 +523,9 @@
 				"function": "transcriptSend(array $to, string $subject)",
 				"description": "Send this user conversation transcript to your email",
 				"example": {
-					"request": "<?php\r\ntranscriptSend(Array(\"john@gmail.com\"), \"Conversation Transcript\".date(\"Y-n-j H:i:s\"));"
+					"request": "<?php\r\ntranscriptSend(\n\tarray(\"john@gmail.com\"),\n\t\"Conversation Transcript\".date(\"Y-n-j H:i:s\"\n\t)\n);"
 				},
-				"visible": true
+				"visible": false
 			}
 		],
 		"log": [
@@ -556,7 +536,7 @@
 				"example": {
 					"request": "<?php\r\nlog(\"Debug Log\", \"Debug info\");"
 				},
-				"visible": true
+				"visible": false
 			}
 		],
 		"then": [
@@ -603,7 +583,7 @@
 				"example": {
 					"request": "<?php\r\nthenEndChat();"
 				},
-				"visible": true
+				"visible": false
 			}
 		]
 	}
