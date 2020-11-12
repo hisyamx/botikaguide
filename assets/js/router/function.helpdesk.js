@@ -1,7 +1,7 @@
 export default {
     data: function() {
         return {
-            data: this.$root.data.function.helpdesk
+            data: this.$root.data.function.funchelpdesk
         }
     },
     template: `<div>
