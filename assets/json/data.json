@@ -351,7 +351,7 @@
 				"function": "respondCarousel(array $carousel)",
 				"description": "Send carousel to user",
 				"example": {
-					"request": "<?php\r\nrespondCarousel(\n\tarray(\n\t\tarray(\n\t\t\t\"title\" => \"Judul Card #1\",\n\t\t\t\"subtitle\" => \"Subtitle #1\",\n\t\t\t\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1kzolhrd4614.jpg\", \n\t\t\t\"button\" => \n\t\t\tarray(\n\t\t\t\tarray(\n\t\t\t\t\t\"type\" => \"text\",\n\t\t\t\t\t\"text\" => \"Klik Ini\",\n\t\t\t\t\t\"payload\" => \"Data payload\"\n\t\t\t\t)\n\t\t\t)\n\t\t),\n\t\tarray(\n\t\t\t\"title\" => \"Judul Card #2\",\n\t\t\t\"subtitle\" => \"Subtitle #2\",\n\t\t\t\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1k0eqdowfkav.jpg\", \n\t\t\t\"button\" => \n\t\t\tarray(\n\t\t\t\tarray(\n\t\t\t\t\"type\" => \"phone\",\n\t\t\t\t\"text\" => \"Telephone\",\n\t\t\t\t\"payload\" => \"081802207000\"\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t)\n);"
+					"request": "<?php\r\nrespondCarousel(\n\tarray(\n\t\tarray(\n\t\t\t\"title\" => \"Judul Card #1\",\n\t\t\t\"subtitle\" => \"Subtitle #1\",\n\t\t\t\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1kzolhrd4614.jpg\", \n\t\t\t\"button\" => array(\n\t\t\t\tarray(\n\t\t\t\t\t\"type\" => \"text\",\n\t\t\t\t\t\"text\" => \"Klik Ini\",\n\t\t\t\t\t\"payload\" => \"Data payload\"\n\t\t\t\t)\n\t\t\t)\n\t\t),\n\t\tarray(\n\t\t\t\"title\" => \"Judul Card #2\",\n\t\t\t\"subtitle\" => \"Subtitle #2\",\n\t\t\t\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1k0eqdowfkav.jpg\", \n\t\t\t\"button\" => array(\n\t\t\t\tarray(\n\t\t\t\t\t\"type\" => \"phone\",\n\t\t\t\t\t\"text\" => \"Telephone\",\n\t\t\t\t\t\"payload\" => \"081802207000\"\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t)\n);"
 				},
 				"visible": true
 			},
@@ -360,7 +360,7 @@
 				"function": "respondCarouselButton(array $carousel, array $button)",
 				"description": "Send carousel with additional button below it",
 				"example": {
-					"request": "<?php\r\nrespondCarouselButton(\n\tarray(\n\t\tarray(\n\t\t\t\"title\" => \"Judul Card Button #1\",\n\t\t\t\"subtitle\" => \"Subtitle #1\",\n\t\t\t\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1kzolhrd4614.jpg\", \n\t\t\t\"button\" => \n\t\t\tarray(\n\t\t\t\tarray(\n\t\t\t\t\t\"type\" => \"text\",\n\t\t\t\t\t\"text\" => \"Klik Ini\",\n\t\t\t\t\t\"payload\" => \"Data yang dikirim balik\"\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t),\n\tarray(\n\t\tarray(\n\t\t\"type\" => \"phone\",\n\t\t\"text\" => \"Telephone\",\n\t\t\"payload\" => \"081802207000\"\n\t\t)\n\t)\n);"
+					"request": "<?php\r\nrespondCarouselButton(\n\tarray(\n\t\tarray(\n\t\t\t\"title\" => \"Judul Card Button #1\",\n\t\t\t\"subtitle\" => \"Subtitle #1\",\n\t\t\t\"image\" => \"https: //botmaster2.botika.online/assets/uploads/b9rykqr3g1k/pics/2018/08/categories/cb9rykqr3g1kzolhrd4614.jpg\", \n\t\t\t\"button\" => array(\n\t\t\t\tarray(\n\t\t\t\t\t\"type\" => \"text\",\n\t\t\t\t\t\"text\" => \"Klik Ini\",\n\t\t\t\t\t\"payload\" => \"Data yang dikirim balik\"\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t),\n\tarray(\n\t\tarray(\n\t\t\t\"type\" => \"phone\",\n\t\t\t\"text\" => \"Telephone\",\n\t\t\t\"payload\" => \"081802207000\"\n\t\t)\n\t)\n);"
 				},
 				"visible": true
 			},
@@ -409,7 +409,7 @@
 				"function": "respondRandomTextToSpeech(array $textArray)",
 				"description": "Send random text to Speech taken from array to user",
 				"example": {
-					"request": "<?php\r\nrespondRandomTextToSpeech(Array(Array(\n\"text\" => \"halo, siapa namamu?\",\n\"voice\" => \"botika_female_1\",\n\"language\" => \"id-ID\"),\nArray(\n\"text\" => \"selamat siang, sudah makan belum?\",\n\"voice\" => \"botika_female_1\",\n\"language\" => \"id-ID\"),\nArray(\n\"text\" => \"tinggalmu di mana?\",\n\"voice\" => \"botika_female_1\",\n\"language\" => \"id-ID\"),));",
+					"request": "<?php\r\nrespondRandomTextToSpeech(\n\tarray(\n\t\tarray(\n\t\t\t\"text\" => \"halo, siapa namamu?\",\n\t\t\t\"voice\" => \"botika_female_1\",\n\t\t\t\"language\" => \"id-ID\"\n\t\t),\n\t\tarray(\n\t\t\t\"text\" => \"selamat siang, sudah makan belum?\",\n\t\t\t\"voice\" => \"botika_female_1\",\n\t\t\t\"language\" => \"id-ID\"\n\t\t),\n\t\tarray(\n\t\t\t\"text\" => \"tinggalmu di mana?\",\n\t\t\t\"voice\" => \"botika_female_1\",\n\t\t\t\"language\" => \"id-ID\"\n\t\t)\n\t)\n);",
 					"response": "Halo, siapa namamu?"
 				},
 				"visible": true
@@ -523,7 +523,7 @@
 				"function": "transcriptSend(array $to, string $subject)",
 				"description": "Send this user conversation transcript to your email",
 				"example": {
-					"request": "<?php\r\ntranscriptSend(\n\tarray(\"john@gmail.com\"),\n\t\"Conversation Transcript\".date(\"Y-n-j H:i:s\"\n\t)\n);"
+					"request": "<?php\r\ntranscriptSend(\n\tarray(\"john@gmail.com\"),\n\t\"Conversation Transcript\".date(\"Y-n-j H:i:s\")\n);"
 				},
 				"visible": false
 			}
@@ -563,7 +563,7 @@
 				"function": "thenJumpTo(string $stateName)",
 				"description": "After the code is executed, jump to the state, stop and wait for next user message",
 				"example": {
-					"request": "<?php\r\nrespondText(\"Hai, apa kabar hari ini?\");"
+					"request": "<?php\r\nthenJumpTo(\"Kabar\");"
 				},
 				"visible": false
 			},
@@ -572,7 +572,7 @@
 				"function": "thenJumpAndRun(string $stateName)",
 				"description": "After the code is executed, jump to the state and run the actions",
 				"example": {
-					"request": "<?php\r\nthenJumpAndRun(string $stateName);"
+					"request": "<?php\r\nthenJumpAndRun(\"Hari\");"
 				},
 				"visible": false
 			},
